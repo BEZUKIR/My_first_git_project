@@ -36,8 +36,10 @@ text = "Вчера Анна и Артем гуляли в парке. Анна �
 "а возле фонтана дети мелом написали refer. Остальные слова в тексте"\
 "палиндромами не являются"
 text=text.lower()
-symb = " ., "
-text.strip(symb) #что-то не получается символы удалить
+symb = "., "
+#text.strip(symb) что-то не получается символы удалить
+text=text.replace(".","")
+text=text.replace(",","")
 words=text.split()
 
 for word in words:
